@@ -1,0 +1,64 @@
+LISTA DE COTEJO 
+Correcciones de las observaciones señaladas en la Rúbrica
+Trabajo: Predicción de la distribución de probabilidades de incapacidades temporales del trabajo en el IMSS mediante modelos de aprendizaje automático
+Alumno: Juan Luis Vázquez Espinoza
+
+---
+
+1. OBSERVACIÓN
+   El objetivo general se limitaba a “estimar la distribución de probabilidad…”, sin enfatizar la parte predictiva ni la utilidad operativa.
+
+   ACCIÓN CORRECTIVA
+   El objetivo se re-escribió para incluir la mejora de la precisión predictiva y la validación frente a expertos (“…mediante un modelo predictivo que mejore las estimaciones institucionales…”).
+
+
+---
+
+2. OBSERVACIÓN
+   Ausencia de gráficas de error (boxplots o distribuciones) para cuantificar sesgos y dispersión.
+
+   ACCIÓN CORRECTIVA
+   Se añadieron Figuras 3.8 a 3.11 (boxplot e histograma de errores para cada modelo y para el evaluador humano) más Tabla 3.4 con estadísticos de error.
+
+
+---
+
+3. OBSERVACIÓN
+   No se presentaban curvas ROC por clase.
+
+   ACCIÓN CORRECTIVA
+   Se creó la Sección 3.4.5 con Figuras 3.12-3.14 (ROC multiclase de CatBoost, XGBoost y Regresión Ordinal) y la Tabla 3.5 de AUC.
+
+
+
+---
+
+4. OBSERVACIÓN
+   Resultados poco visibles al estar mezclados con metodología; se sugirió un capítulo aparte.
+
+   ACCIÓN CORRECTIVA
+   Re-estructuración: ahora todo el análisis de resultados está concentrado en la nueva Sección 3.4 “Análisis de resultados”, anunciada en el índice.
+
+
+
+---
+
+5. OBSERVACIÓN
+   Falta de comparación explícita con el desempeño humano.
+
+   ACCIÓN CORRECTIVA
+   Se incluyeron matrices de confusión y métricas donde se contrasta cada modelo con la evaluación humana; además, se agrega el script de cálculo comparado de precisión.
+
+
+
+---
+
+6. OBSERVACIÓN
+   Se pidió análisis ROC y de error por clase para evaluar la capacidad discriminativa.
+
+   ACCIÓN CORRECTIVA
+   Además de las curvas ROC, se añadió texto interpretativo que destaca AUC ≥ 0.95 en todas las clases y posiciona el punto de desempeño humano lejos de la curva óptima.
+
+
+
+---
